@@ -1,0 +1,56 @@
+{
+  "name": "@authyo/auth-react",
+  "version": "1.0.0",
+  "description": "React wrapper for the Authyo passwordless SDK.",
+  "license": "MIT",
+  "author": "Authyo",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "@authyo/auth-js": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/authyo/auth-react"
+  },
+  "bugs": {
+    "url": "https://github.com/authyo/auth-react/issues"
+  },
+  "homepage": "https://authyo.io/docs",
+  "keywords": [
+    "authyo",
+    "authentication",
+    "auth",
+    "passwordless",
+    "otp",
+    "webauthn",
+    "react",
+    "identity",
+    "security",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=16"
+  }
+}
+
